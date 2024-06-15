@@ -29,6 +29,10 @@
             background-color: #fff;
         }
 
+        .selectUnit{
+            height: min-content;
+        }
+
         .header {
             background-color: rgb(62, 139, 211);
             color: #fff;
@@ -114,7 +118,7 @@
                     </div>
                     <div class="form-group">
                         <label for="unit">Unit:</label>
-<div class="d-flex">
+<div class="d-flex selectUnit">
                         <select id="unit" class="form-control">
                             <option value="km">Kilometers</option>
                             <option value="m">Meters</option>
@@ -172,11 +176,11 @@
     var units = document.getElementById('unit').value;
 
     // Hide all results initially
-    document.getElementById('km-result').style.display = "none";
+    /*document.getElementById('km-result').style.display = "none";
     document.getElementById('m-result').style.display = "none";
     document.getElementById('cm-result').style.display = "none";
     document.getElementById('in-result').style.display = "none";
-    document.getElementById('ft-result').style.display = "none";
+    document.getElementById('ft-result').style.display = "none"; */
 
     if (units === 'km') {
         document.getElementById('m').textContent = distance * 1000;
