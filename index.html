@@ -119,6 +119,7 @@
                             <option value="m">Meters</option>
                             <option value="cm">Centimeters</option>
                             <option value="in">Inches</option>
+<option value="ft">Feet</option>
                         </select>
                         <button class="btn btn-primary mt-3" onclick="convertDistance()">Convert</button>
                         <div class="result">
@@ -169,11 +170,11 @@
     var units = document.getElementById('unit').value;
 
     // Hide all results initially
-    document.getElementById('km-result').style.display = 'none';
-    document.getElementById('m-result').style.display = 'none';
-    document.getElementById('cm-result').style.display = 'none';
-    document.getElementById('in-result').style.display = 'none';
-    document.getElementById('ft-result').style.display = 'none';
+    document.getElementById('km-result').style.display = "none";
+    document.getElementById('m-result').style.display = "none";
+    document.getElementById('cm-result').style.display = "none";
+    document.getElementById('in-result').style.display = "none";
+    document.getElementById('ft-result').style.display = "none";
 
     if (units === 'km') {
         document.getElementById('m').textContent = distance * 1000;
